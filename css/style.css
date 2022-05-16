@@ -7,3 +7,45 @@
 body{
     font-family: 'Open Sans', sans-serif;
 }
+/* header */
+header{
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 80px;
+    position: fixed;
+    background-color: white;
+    width: 100%;
+}
+.txt-head{
+    display: flex;
+    align-items: center;
+}
+.ul-head ul li{
+    display: inline-block;
+    list-style: none;
+}
+.ul-head ul li a,
+.btn a
+{
+    text-decoration: none;
+    padding: 30px 20px;
+}
+.ul-head ul li a:hover{
+    border-bottom: solid 3px black;
+}
+.btn{
+    background-color: #0061FF;
+    padding: 5px 5px;
+}
+.btn a{
+    color: white;
+}
+
+
+
+main{
+    background-color: lightgreen;
+    height: 1000px;
+}
