@@ -32,6 +32,7 @@ header{
 {
     text-decoration: none;
     padding: 30px 20px;
+    color: black;
 }
 .ul-head ul li a:hover{
     border-bottom: solid 3px black;
@@ -100,7 +101,6 @@ main{
 .container{
     width: 57vw;  
     padding-top: 13vh;
-    background-color: white; 
 }
 .div-font{
     font-size: 43px;
@@ -134,6 +134,7 @@ main{
 .column{
     border: 1px solid #D9D9DB;
     width: calc(100% / 3 - 40px);
+    margin-bottom: 30px;
 }
 .head-column{
     text-align: center;
@@ -142,7 +143,7 @@ main{
     font-size: 15px;
 }
 .main-column{
-    padding: 20px;
+    padding: 25px;
 }
 .column-title{
     font-size: 29px;
@@ -160,24 +161,72 @@ main{
 }
 .list ul li{
     list-style: none;
-    line-height: 45px;
+    position: relative;
+    padding: 10px 0 10px 20px;
+}
+.user::before,
+.users::before,
+.folder::before,
+.share::before{
+    color: black;
+    font-family: FontAwesome;
+    position: absolute;
+    margin-left: -20px;
 }
 .user::before{
     content: " \f007";
-    color: black;
-    font-family: FontAwesome;
+}
+.users::before{
+    content: " \e533";
 }
 .folder::before{
     content: " \f07b";
-    color: black;
-    font-family: FontAwesome;
 }
 .share::before{
     content: " \f1e0";
-    color: black;
-    font-family: FontAwesome;
-} 
+}
 .btn-width-small{
     width: 100%;
     padding: 15px 0;
 }
+.link-column{
+    padding: 30px 0px;
+}
+.link-column a{
+    color: blue;
+}
+.small-line{
+    border-top: solid #D9D9DB 1px;
+    width: 20%;
+}
+.low-title{
+    padding-top: 30px;
+    font-weight: bold;
+}
+.tick::before{
+    content: " \f00c";
+    color: black;
+    font-family: FontAwesome;
+    position: absolute;
+    margin-left: -20px;
+    color: blue;
+}
+
+.small-table{
+    border: 1px solid #D9D9DB;
+}
+.cont-small-table{
+    display: flex;
+    justify-content: space-between;
+    padding: 35px;
+
+}
+.txt-small-table{
+    width: 70%;
+}
+.txt-table{
+    padding: 30px 0 20px 0;
+}
+.btn-table{
+    width: 30%;
+} 
