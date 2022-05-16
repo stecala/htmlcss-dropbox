@@ -28,7 +28,8 @@ header{
     list-style: none;
 }
 .ul-head ul li a,
-.btn a
+.btn a,
+.btn-section a
 {
     text-decoration: none;
     padding: 30px 20px;
@@ -99,7 +100,7 @@ main{
     justify-content: center;
 }
 .container{
-    width: 57vw;  
+    width: 55vw;  
     padding-top: 13vh;
 }
 .div-font{
@@ -230,3 +231,24 @@ main{
 .btn-table{
     width: 30%;
 } 
+.flex-cont{
+    display: flex;
+    justify-content: space-between;
+}
+.img-section{
+    width: 60%;
+}
+.img-section img{
+    width: 100%;
+}
+.txt-section{
+    width: 35%;
+    padding-top: 50px;
+}
+.btn-section{
+    border: solid 1px;
+    width: 50%;
+    padding: 5px 0;
+    text-align: center;
+    margin: 15px 0;
+}
