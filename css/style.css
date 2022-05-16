@@ -38,14 +38,58 @@ header{
 .btn{
     background-color: #0061FF;
     padding: 5px 5px;
+    text-align: center;
 }
 .btn a{
     color: white;
 }
-
-
-
+/* main */
+.jumbo{
+    background-color: #B4D0E7;
+    width: 100%;  
+    display: flex;
+    justify-content: center; 
+}
+.cont{
+    width: 60vw;
+}
+.cont h1{
+    font-size: 80px;
+    padding: 50px 0;
+}
+.cont-txt-img{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.txt-jumbo{
+    width: 33%;
+}
+.btn-width{
+    width: 250px;
+    margin: 30px 0;
+}
+.arrow{
+    padding-top: 50px;
+    font-size: 50px;
+}
+.arrow a{
+    text-decoration: none;
+    color: black;
+}
+.img-jumbo{
+    width: 67%;
+    position: relative;
+}
+.img-jumbo img{
+    width: 100%;
+    position: absolute;
+    top: 0%;
+    left: 0%;
+}
 main{
     background-color: lightgreen;
     height: 1000px;
+    margin: 0px auto;
+    padding-top: 80px;
 }
