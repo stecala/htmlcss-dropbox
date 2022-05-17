@@ -28,6 +28,9 @@ html {
 		scroll-behavior: auto;
 	}
 }
+img{
+    width: 100%;
+}
 /* header */
 header{
     padding: 20px;
@@ -111,7 +114,6 @@ main{
     position: relative;
 }
 .img-jumbo img{
-    width: 100%;
     position: absolute;
     top: 0%;
     left: 0%;
@@ -261,9 +263,6 @@ main{
 .img-section{
     width: 60%;
 }
-.img-section img{
-    width: 100%;
-}
 .txt-section{
     width: 35%;
     padding-top: 50px;
@@ -275,6 +274,72 @@ main{
     text-align: center;
     margin: 15px 0;
 }
-.column div img{
-    width: 100%;
+.square-section{
+    padding-top: 100px;
+    display: flex;
 }
+.cont-square{
+    width: calc(100% - 64vw);
+    padding: 40px;
+    background-color: #f5f5f5;
+    height: 32vw;
+    overflow: auto;
+}
+.cont-square::-webkit-scrollbar {
+    display: none;
+}
+.square{
+    width: 16vw;
+    height: 16vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.square:hover{
+    border: 25px solid rgba(255, 255, 255, 0.3);
+    cursor: pointer;
+}
+.flex-square{
+    display: flex;
+    flex-wrap: wrap;
+    width: 32vw;
+}
+.square img{
+    width: 50%;
+    filter: invert();
+}
+.card-1{
+    background-color: #A2D39B;
+}
+.card-2{
+    background-color: #61082B;
+}
+.card-3{
+    background-color: #0093CE;
+}
+.card-4{
+    background-color: #ff1c1c;
+}
+.card-5{
+    background-color: #D5001F;
+}
+.card-6{
+    background-color: #B4D0E7;
+}
+.card-7{
+    background-color: #0d2481;
+}
+.card-8{
+    background-color: #ffd830;
+}
+.logo-central-card{
+    width: 50%;
+    padding-bottom: 50px;
+}
+
+
+
+
+
+
+/* footer */
