@@ -104,6 +104,7 @@ main{
     max-width: 55vw;  
     padding-top: 13vh;
     margin: 0 auto;
+    position: relative;
 }
 .div-font{
     font-size: 43px;
@@ -336,11 +337,35 @@ main{
     padding: 30px 0;
     font-weight: bold;
     border-top: 1px solid black;
+    cursor: pointer;
 }
 .container .list ul li:last-child{
     border-bottom: 1px solid black;
 }
-
+.answer{
+    font-weight: normal;
+    padding-top: 20px;
+    display: none;
+}
+.container .list ul li:hover .answer{
+    display: block;
+}
+.arrow-answer{
+    position: absolute;
+    left: 90%;
+}
+.arrow-answer-up{
+    position: absolute;
+    left: 90%;
+    transition: 1s;
+    display: none;
+}
+.container .list ul li:hover .arrow-answer{
+    display: none;
+}
+.container .list ul li:hover .arrow-answer-up{
+    display: block;
+}
 /* footer */
 .foot-li-title{
     font-weight: bold;
