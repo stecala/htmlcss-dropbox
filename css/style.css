@@ -15,16 +15,19 @@ html {
    } 
 /* header */
 header{
-    padding: 20px;
+    padding: 0 20px;
     display: flex;
     justify-content: space-between;
     align-items: center;
     height: 80px;
     position: fixed;
-    background-color: white;
     width: 100%;
     z-index: 1;
     border-bottom: 1px solid #D9D9DB;
+    background-color: white;
+}
+.logo{
+    padding-right: 10px;
 }
 .txt-head{
     display: flex;
@@ -33,6 +36,8 @@ header{
 .ul-head ul li{
     display: inline-block;
     list-style: none;
+    padding: 30px;
+
 }
 .ul-head ul li a,
 .btn a,
@@ -401,3 +406,24 @@ main{
     font-weight: bold;
 }
 /* se si clicca su logo si ritorna in index */
+/* Dropdown */
+.dropdown{
+    position: relative;
+}
+.dropdown:hover{
+    background-color: #F2EEE8;
+}
+.dropdown-content {
+    display: none;
+    position: absolute;
+    top: 80px;
+    left: 0px;
+    background-color: #F2EEE8;
+    z-index: 1;
+}
+.dropdown:hover .dropdown-content {
+    display: flex;
+}
+.dropdown-content .cont-drop ul li{
+    padding: 10px 50px;
+}
