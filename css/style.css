@@ -30,8 +30,26 @@ img{
 html { 
     scroll-behavior: smooth; 
    } 
-.pad-top{
+.pad-top50{
     padding-top: 50px;
+}
+.pad-top30{
+    padding-top: 30px;
+}
+.pad-top13{
+    padding-top: 13vh;
+}
+.pad-bot13{
+    padding-bottom: 13vh;
+}
+.pad-bot50{
+    padding-bottom: 50px;
+}
+.border-all{
+    border: 1px solid var(--bord-col1);
+}
+.border-bot{
+    border-bottom: 1px solid var(--bord-col1);
 }
 /* header */
 header{
@@ -93,7 +111,7 @@ main{
     font-size: 80px;
     padding: 60px 0;
 }
-.cont-txt-img{
+.flex-wrap-space{
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
@@ -107,7 +125,6 @@ main{
     margin: 40px 0;
 }
 .arrow{
-    padding-top: 53px;
     font-size: 50px;
 }
 .arrow a{
@@ -126,14 +143,12 @@ main{
 .container{
     width: 100%;
     max-width: 55vw;  
-    padding-top: 13vh;
     margin: 0 auto;
     position: relative;
 }
-.div-font{
+.div-title{
     font-size: 43px;
     font-weight: 700;
-    padding-bottom: 50px;
 }
 .fake-radio{
     display: flex;
@@ -154,11 +169,6 @@ main{
 }
 .txt-radio{
     padding: 0 30px 0 5px; 
-}
-.cont-column{
-    display: flex;
-    justify-content: space-between;
-    flex-wrap: wrap;
 }
 .column{
     width: calc(100% / 3 - 40px);
@@ -229,23 +239,14 @@ main{
     width: 20%;
 }
 .low-title{
-    padding-top: 30px;
     font-weight: bold;
 }
 .tick::before{
     content: " \f00c";
-    color: black;
     font-family: FontAwesome;
     position: absolute;
     margin-left: -20px;
     color: blue;
-}
-
-.border-all{
-    border: 1px solid #D9D9DB;
-}
-.border-bot{
-    border-bottom: 1px solid #D9D9DB;
 }
 .cont-small-table{
     display: flex;
@@ -340,29 +341,20 @@ background-color: var(--bgcolor9);
 }
 .logo-central-card{
     width: 50%;
-    padding-bottom: 50px;
 }
 .color-txt{
     color: #61082B;
 }
-.pad-bot{
-    padding-bottom: 13vh;
-}
 .jumbo .container div:last-child{
     width: 20%;
 }
-.bg-color{
-    background-color: var(--bord-col3);
-    color: white;
-    height: 50vh;
-}
-.pad-bot .list ul li{
+.pad-bot13 .list ul li{
     padding: 30px 0;
     font-weight: bold;
     border-top: 1px solid var(--bord-col3);
     cursor: pointer;
 }
-.pad-bot .list ul li:last-child{
+.pad-bot13 .list ul li:last-child{
     border-bottom: 1px solid var(--bord-col3);
 }
 .answer{
@@ -390,6 +382,11 @@ background-color: var(--bgcolor9);
     display: block;
 }
 /* footer */
+footer{
+    background-color: var(--bord-col3);
+    color: white;
+    height: 50vh;
+}
 .foot-li-title{
     font-weight: bold;
     font-size: 25px;
@@ -414,7 +411,6 @@ background-color: var(--bgcolor9);
 }
 .txt-lang{
     font-size: 12px;
-    padding-top: 30px;
 }
 /* pagina bonus */
 .selected{
@@ -427,10 +423,12 @@ background-color: var(--bgcolor9);
 }
 .dropdown:hover{
     background-color: var(--bgcolor12);
+    border-radius: 10px 10px 0 0; 
 }
 .dropdown-content {
     display: none;
     position: absolute;
+    width: 30vw;
     top: 80px;
     left: 0px;
     background-color: var(--bgcolor12);
@@ -438,6 +436,7 @@ background-color: var(--bgcolor9);
 }
 .dropdown:hover .dropdown-content {
     display: flex;
+    border-radius: 0 10px 10px 10px ; 
 }
 .dropdown-content .cont-drop ul li{
     padding: 10px 50px;
